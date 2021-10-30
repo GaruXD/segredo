@@ -1,0 +1,34 @@
+<html><head></head><body onload="myFunction()">
+<center>
+<font size="25"><p id="demo">NA.</p></font>
+
+
+<script>
+function myFunction() {
+    var data = new Date();
+    var h = data.getHours()
+    var yn = ""
+
+if (h >= 0 && h < 6) {
+  yn = "Boa madrugada Duda.";
+}
+else if (h >= 6 && h < 12) {
+  yn = "Bom dia Duda.";
+}
+else if (h >= 12 && h < 18) {
+  yn = "Boa tarde Duda.";
+}
+else if (h >= 18) {
+  yn = "Boa noite Duda.";
+}
+else {
+  yn = "DEU ERRO";
+}
+
+    document.getElementById("demo").innerHTML = yn;
+    }
+</script>
+
+
+
+</center></body></html>
